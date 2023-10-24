@@ -11,13 +11,16 @@ class Book {
   constructor(title, author, pages) {
     this.title = title;
     this.author = author;
-    this.pages = pages;    
+    this.pages = pages;
   }
-  displayInfo = () => console.log(`Название: "${this.title}", Автор: " ${this.author}", Количество страниц: ${this.pages}`);
+  displayInfo() {
+    console.log(
+      `Название: "${this.title}", Автор: " ${this.author}", Количество страниц: ${this.pages}`
+    );
+  }
 }
 const book = new Book("Война и мир", "Лев Толстой", 1237);
-book.displayInfo(); 
-
+book.displayInfo();
 
 // Задание 2: "Управление списком студентов"
 // Реализуйте класс Student, представляющий студента, со следующими свойствами и методами:
@@ -27,12 +30,14 @@ book.displayInfo();
 // Свойство grade (класс) - строка, класс, в котором учится студент.
 // Метод displayInfo() - выводит информацию о студенте в консоль.
 class Student {
-    constructor( name, age, grade){
-        this.name = name;
-        this.age = age;
-        this.grade = grade;
-    }
-    displayInfo = () => console.log(`Имя: ${this.name}, Возраст: ${this.age}, класс ${this.grade}`)
+  constructor(name, age, grade) {
+    this.name = name;
+    this.age = age;
+    this.grade = grade;
+  }
+  displayInfo() {
+    console.log(`Имя: ${this.name}, Возраст: ${this.age}, класс ${this.grade}`);
+  }
 }
 
 // // Пример использования класса
